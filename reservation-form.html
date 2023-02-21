@@ -9,7 +9,77 @@
 
     <body>
 
-        <h1></h1>
+        <section>
+
+            <h1><b>Travel reservation form</b></h1>
+
+            <h2><b>* denotes mandatory</b></h2>
+
+            <form>
+
+            <section class="Name">
+            <label for="name">Full name*:</label><br>
+            <input type="text" name="name" id="name" placeholder="FirstName LastName">
+            </section>
+
+            <section class="Email">
+            <label for="email">Email address*:</label><br>
+            <input type="text" name="email" id="email" placeholder="EMAIL_ADDRESS">
+            </section>
+
+            <section class="Package">
+            <label for="package">Select Tour Package*:</label><br>
+            <select name="package" id="package">
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="platinum">Platinum</option>
+            </select>
+
+            <section class="Arrival Date">
+                <label for="date">Arrival date*:</label><br>
+                <input id="date" name="date" type="date">
+            </section>
+            
+            <section class="Number of Persons">
+                <label for="number">Number of Persons*:</label><br>
+                <input id="number" name="number" type="number" placeholder="UNKNOWN_TYPE" step="1">
+            </section>
+
+            <section class="Avail">
+                <text>What would you want to avail?*</text>
+                <br>
+                <label for="board">Boarding</label>
+                <input id="board" name="avail" type="checkbox" value="board">
+                <br>
+                <label for="food">Fooding</label>
+                <input id="food" name="avail" type="checkbox" value="food">
+                <br>
+                <label for="sight">Sight Seeing</label>
+                <input id="sight" name="avail" type="checkbox" value="sight">
+            </section>
+
+            <section class="Discount Coupon Code">
+                <label for="code">Discount Coupon code:</label><br>
+                <input id="code" name="code" type="text" placeholder="UNKNOWN_TYPE" >
+            </section>
+
+            <section class="Terms and Conditions">
+                <text>Terms and Conditions*</text>
+                <br>
+                <input type="radio" id="agree" name="answer" value="agree">
+                <label for="agree">I agree</label>
+                
+                <input type="radio" id="disagree" name="answer" value="disagree">
+                <label for="disagree">I disagree</label>
+            </section>
+
+            <section class="Submit">
+                <input type="submit" value="Complete reservation">
+            </section>
+
+            </form>
+
+        </section>
 
     </body>
 
